@@ -8,48 +8,80 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         :root {
-            /* Elite Executive Color Palette */
-            --primary-950: #0a0a0a;
-            --primary-900: #1a1a1a;
-            --primary-800: #2a2a2a;
-            --primary-700: #3a3a3a;
-            --primary-600: #525252;
-            --primary-500: #737373;
-            --primary-400: #a3a3a3;
-            --primary-300: #d4d4d4;
-            --primary-200: #e5e5e5;
-            --primary-100: #f5f5f5;
-            --primary-50: #fafafa;
+            /* Elite Executive Color Palette - Enhanced */
+            --primary-950: #030712;
+            --primary-900: #111827;
+            --primary-800: #1f2937;
+            --primary-700: #374151;
+            --primary-600: #4b5563;
+            --primary-500: #6b7280;
+            --primary-400: #9ca3af;
+            --primary-300: #d1d5db;
+            --primary-200: #e5e7eb;
+            --primary-100: #f3f4f6;
+            --primary-50: #f9fafb;
             
-            /* Executive Premium Colors */
-            --gold-400: #f59e0b;
-            --gold-300: #fbbf24;
-            --gold-200: #fcd34d;
-            --silver-400: #a1a1aa;
-            --silver-300: #d4d4d8;
-            --silver-200: #e4e4e7;
+            /* Executive Premium Colors - Refined */
+            --gold-600: #d97706;
+            --gold-500: #f59e0b;
+            --gold-400: #fbbf24;
+            --gold-300: #fcd34d;
+            --gold-200: #fde68a;
+            --gold-100: #fef3c7;
             
-            /* Premium Gradients */
-            --gradient-gold: linear-gradient(135deg, #f59e0b 0%, #fbbf24 50%, #fcd34d 100%);
-            --gradient-silver: linear-gradient(135deg, #6b7280 0%, #9ca3af 50%, #d1d5db 100%);
-            --gradient-executive: linear-gradient(135deg, #111827 0%, #1f2937 50%, #374151 100%);
-            --gradient-dark: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 25%, #2a2a2a 75%, #1a1a1a 100%);
+            /* Platinum & Silver Tones */
+            --platinum-600: #71717a;
+            --platinum-500: #a1a1aa;
+            --platinum-400: #d4d4d8;
+            --platinum-300: #e4e4e7;
+            --platinum-200: #f4f4f5;
             
-            /* Executive Effects */
-            --glass-bg: rgba(245, 158, 11, 0.05);
-            --glass-border: rgba(245, 158, 11, 0.2);
-            --glass-shadow: 0 8px 32px rgba(245, 158, 11, 0.15);
-            --glass-blur: blur(16px);
+            /* Executive Accent Colors */
+            --navy-900: #0f172a;
+            --navy-800: #1e293b;
+            --navy-700: #334155;
+            --navy-600: #475569;
+            --navy-500: #64748b;
             
-            /* Premium Shadows */
-            --shadow-gold: 0 0 30px rgba(245, 158, 11, 0.4);
-            --shadow-silver: 0 0 25px rgba(156, 163, 175, 0.3);
-            --shadow-executive: 0 25px 50px rgba(0, 0, 0, 0.25);
-            --shadow-premium: 0 20px 40px rgba(245, 158, 11, 0.2);
+            /* Luxury Deep Tones */
+            --charcoal-950: #0c0a09;
+            --charcoal-900: #1c1917;
+            --charcoal-800: #292524;
+            --charcoal-700: #44403c;
             
-            /* Typography */
+            /* Premium Brand Colors */
+            --executive-blue: #1e40af;
+            --executive-indigo: #3730a3;
+            --executive-emerald: #047857;
+            --executive-rose: #be185d;
+            
+            /* Enhanced Gradients */
+            --gradient-executive-gold: linear-gradient(135deg, #d97706 0%, #f59e0b 25%, #fbbf24 75%, #fcd34d 100%);
+            --gradient-platinum: linear-gradient(135deg, #71717a 0%, #a1a1aa 50%, #d4d4d8 100%);
+            --gradient-navy-gold: linear-gradient(135deg, #0f172a 0%, #1e293b 30%, #d97706 100%);
+            --gradient-charcoal: linear-gradient(135deg, #0c0a09 0%, #1c1917 25%, #292524 75%, #1c1917 100%);
+            --gradient-executive-dark: linear-gradient(135deg, #030712 0%, #111827 25%, #1f2937 50%, #374151 75%, #111827 100%);
+            --gradient-luxury: linear-gradient(135deg, #0c0a09 0%, #d97706 50%, #0c0a09 100%);
+            
+            /* Elite Glass Effects */
+            --glass-gold-bg: rgba(217, 119, 6, 0.08);
+            --glass-gold-border: rgba(251, 191, 36, 0.25);
+            --glass-platinum-bg: rgba(161, 161, 170, 0.06);
+            --glass-platinum-border: rgba(212, 212, 216, 0.2);
+            --glass-navy-bg: rgba(30, 41, 59, 0.1);
+            --glass-navy-border: rgba(71, 85, 105, 0.3);
+            
+            /* Sophisticated Shadows */
+            --shadow-executive-gold: 0 0 40px rgba(217, 119, 6, 0.35);
+            --shadow-platinum: 0 0 30px rgba(161, 161, 170, 0.25);
+            --shadow-luxury: 0 30px 60px rgba(12, 10, 9, 0.4);
+            --shadow-elite: 0 25px 50px rgba(217, 119, 6, 0.15);
+            --shadow-premium-dark: 0 20px 40px rgba(3, 7, 18, 0.6);
+            
+            /* Executive Typography Enhancement */
             --font-display: 'Playfair Display', serif;
             --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+            --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
             
             /* Responsive Spacing */
             --space-xs: 0.25rem;
@@ -84,7 +116,7 @@
 
         body {
             font-family: var(--font-body);
-            background: var(--gradient-dark);
+            background: var(--gradient-executive-dark);
             color: var(--primary-100);
             line-height: 1.6;
             -webkit-font-smoothing: antialiased;
@@ -105,9 +137,9 @@
             width: 100%;
             z-index: 1000;
             padding: var(--space-md) 0;
-            background: rgba(0, 0, 0, 0.95);
-            backdrop-filter: var(--glass-blur);
-            border-bottom: 1px solid rgba(245, 158, 11, 0.3);
+            background: rgba(3, 7, 18, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--glass-gold-border);
             transition: all 0.3s ease;
         }
 
@@ -122,7 +154,7 @@
             font-family: var(--font-display);
             font-weight: 700;
             font-size: clamp(1.3rem, 4vw, 1.8rem);
-            background: var(--gradient-gold);
+            background: var(--gradient-executive-gold);
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -136,7 +168,7 @@
         }
 
         .nav-link {
-            color: var(--silver-300);
+            color: var(--platinum-400);
             text-decoration: none;
             font-weight: 500;
             font-size: 0.9rem;
@@ -148,7 +180,7 @@
         }
 
         .nav-link:hover {
-            background: var(--gradient-gold);
+            background: var(--gradient-executive-gold);
             color: var(--primary-950);
             transform: translateY(-2px);
         }
@@ -165,7 +197,7 @@
         .mobile-menu-toggle span {
             width: 25px;
             height: 3px;
-            background: var(--gold-300);
+            background: var(--gold-400);
             margin: 3px 0;
             transition: 0.3s;
         }
@@ -176,7 +208,7 @@
             display: flex;
             align-items: center;
             position: relative;
-            background: var(--gradient-executive);
+            background: var(--gradient-navy-gold);
             padding: var(--space-4xl) 0;
         }
 
@@ -195,14 +227,14 @@
             display: inline-flex;
             align-items: center;
             gap: var(--space-sm);
-            background: var(--glass-bg);
-            border: 2px solid var(--glass-border);
+            background: var(--glass-gold-bg);
+            border: 2px solid var(--glass-gold-border);
             padding: var(--space-sm) var(--space-lg);
             border-radius: var(--radius-full);
             font-size: clamp(0.7rem, 2vw, 0.9rem);
             font-weight: 600;
             margin-bottom: var(--space-lg);
-            backdrop-filter: var(--glass-blur);
+            backdrop-filter: blur(16px);
             text-transform: uppercase;
             letter-spacing: 1px;
         }
@@ -213,7 +245,7 @@
             font-weight: 900;
             line-height: 1.1;
             margin-bottom: var(--space-md);
-            background: var(--gradient-gold);
+            background: var(--gradient-executive-gold);
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -223,13 +255,13 @@
             font-family: var(--font-display);
             font-size: clamp(1.2rem, 4vw, 1.8rem);
             font-weight: 600;
-            color: var(--silver-200);
+            color: var(--platinum-200);
             margin-bottom: var(--space-lg);
         }
 
         .hero-subtitle {
             font-size: clamp(1rem, 2.5vw, 1.25rem);
-            color: var(--silver-400);
+            color: var(--platinum-500);
             margin-bottom: var(--space-xl);
             line-height: 1.7;
         }
@@ -244,17 +276,17 @@
         .stat-item {
             text-align: center;
             padding: var(--space-lg);
-            background: var(--glass-bg);
-            border: 1px solid var(--glass-border);
+            background: var(--glass-gold-bg);
+            border: 1px solid var(--glass-gold-border);
             border-radius: var(--radius-xl);
-            backdrop-filter: var(--glass-blur);
+            backdrop-filter: blur(16px);
         }
 
         .stat-number {
             font-family: var(--font-display);
             font-size: clamp(1.5rem, 4vw, 2.5rem);
             font-weight: 800;
-            background: var(--gradient-gold);
+            background: var(--gradient-executive-gold);
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -263,7 +295,7 @@
 
         .stat-label {
             font-size: clamp(0.7rem, 2vw, 0.9rem);
-            color: var(--silver-400);
+            color: var(--platinum-500);
             margin-top: var(--space-xs);
             text-transform: uppercase;
             letter-spacing: 0.5px;
@@ -296,24 +328,24 @@
         }
 
         .btn-primary {
-            background: var(--gradient-gold);
+            background: var(--gradient-executive-gold);
             color: var(--primary-950);
-            box-shadow: var(--shadow-gold);
+            box-shadow: var(--shadow-executive-gold);
         }
 
         .btn-primary:hover {
             transform: translateY(-3px);
-            box-shadow: 0 0 40px rgba(245, 158, 11, 0.6);
+            box-shadow: var(--shadow-luxury);
         }
 
         .btn-secondary {
-            background: rgba(156, 163, 175, 0.1);
-            color: var(--silver-200);
-            border: 2px solid var(--silver-400);
+            background: var(--glass-platinum-bg);
+            color: var(--platinum-200);
+            border: 2px solid var(--platinum-500);
         }
 
         .btn-secondary:hover {
-            background: rgba(156, 163, 175, 0.2);
+            background: var(--glass-platinum-border);
             transform: translateY(-2px);
         }
 
@@ -325,12 +357,12 @@
         }
 
         .hero-card {
-            background: var(--glass-bg);
-            border: 2px solid var(--glass-border);
+            background: var(--glass-gold-bg);
+            border: 2px solid var(--glass-gold-border);
             border-radius: var(--radius-3xl);
             padding: var(--space-2xl);
-            backdrop-filter: var(--glass-blur);
-            box-shadow: var(--shadow-executive);
+            backdrop-filter: blur(16px);
+            box-shadow: var(--shadow-luxury);
             text-align: center;
             width: 100%;
             max-width: 400px;
@@ -340,13 +372,13 @@
             width: clamp(120px, 20vw, 180px);
             height: clamp(120px, 20vw, 180px);
             border-radius: 50%;
-            background: var(--gradient-gold);
+            background: var(--gradient-executive-gold);
             margin: 0 auto var(--space-lg);
             border: 4px solid var(--gold-400);
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: var(--shadow-gold);
+            box-shadow: var(--shadow-executive-gold);
         }
 
         .profile-avatar img {
@@ -370,7 +402,7 @@
         }
 
         .profile-info p {
-            color: var(--silver-400);
+            color: var(--platinum-400);
             margin-bottom: var(--space-xs);
             font-size: clamp(0.9rem, 2vw, 1.1rem);
         }
@@ -379,7 +411,7 @@
             display: inline-flex;
             align-items: center;
             gap: var(--space-sm);
-            background: var(--gradient-gold);
+            background: var(--gradient-executive-gold);
             color: var(--primary-950);
             padding: var(--space-sm) var(--space-md);
             border-radius: var(--radius-full);
@@ -404,7 +436,7 @@
             font-size: clamp(2rem, 6vw, 3.5rem);
             font-weight: 800;
             margin-bottom: var(--space-lg);
-            background: var(--gradient-gold);
+            background: var(--gradient-executive-gold);
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -412,7 +444,7 @@
 
         .section-subtitle {
             font-size: clamp(1rem, 3vw, 1.25rem);
-            color: var(--silver-400);
+            color: var(--platinum-500);
             max-width: 700px;
             margin: 0 auto;
         }
@@ -425,18 +457,18 @@
         }
 
         .skill-card {
-            background: var(--glass-bg);
-            border: 2px solid var(--glass-border);
+            background: var(--glass-gold-bg);
+            border: 2px solid var(--glass-gold-border);
             border-radius: var(--radius-2xl);
             padding: var(--space-xl);
-            backdrop-filter: var(--glass-blur);
+            backdrop-filter: blur(16px);
             transition: all 0.3s ease;
-            box-shadow: var(--shadow-premium);
+            box-shadow: var(--shadow-elite);
         }
 
         .skill-card:hover {
             transform: translateY(-8px);
-            box-shadow: var(--shadow-executive);
+            box-shadow: var(--shadow-luxury);
             border-color: var(--gold-400);
         }
 
@@ -449,7 +481,7 @@
 
         .skill-icon {
             font-size: clamp(1.5rem, 4vw, 2rem);
-            background: var(--gradient-gold);
+            background: var(--gradient-executive-gold);
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -470,8 +502,8 @@
 
         .skill-tag {
             padding: var(--space-sm) var(--space-md);
-            background: rgba(245, 158, 11, 0.1);
-            border: 1px solid rgba(245, 158, 11, 0.3);
+            background: rgba(217, 119, 6, 0.15);
+            border: 1px solid rgba(251, 191, 36, 0.4);
             border-radius: var(--radius-lg);
             font-size: clamp(0.75rem, 2vw, 0.9rem);
             font-weight: 500;
@@ -480,14 +512,14 @@
         }
 
         .skill-tag:hover {
-            background: var(--gradient-gold);
+            background: var(--gradient-executive-gold);
             color: var(--primary-950);
             transform: translateY(-2px);
         }
 
         /* Contact Section - Enhanced */
         .contact {
-            background: var(--gradient-executive);
+            background: var(--gradient-navy-gold);
             border-top: 2px solid var(--gold-400);
         }
 
@@ -507,25 +539,25 @@
             align-items: center;
             gap: var(--space-lg);
             padding: var(--space-lg);
-            background: var(--glass-bg);
-            border: 2px solid var(--glass-border);
+            background: var(--glass-gold-bg);
+            border: 2px solid var(--glass-gold-border);
             border-radius: var(--radius-xl);
             text-decoration: none;
-            color: var(--silver-200);
+            color: var(--platinum-200);
             transition: all 0.3s ease;
-            backdrop-filter: var(--glass-blur);
+            backdrop-filter: blur(16px);
         }
 
         .contact-method:hover {
-            background: rgba(245, 158, 11, 0.1);
+            background: rgba(217, 119, 6, 0.15);
             transform: translateX(8px);
-            box-shadow: var(--shadow-gold);
+            box-shadow: var(--shadow-executive-gold);
         }
 
         .contact-icon {
             width: clamp(50px, 10vw, 60px);
             height: clamp(50px, 10vw, 60px);
-            background: var(--gradient-gold);
+            background: var(--gradient-executive-gold);
             border-radius: var(--radius-lg);
             display: flex;
             align-items: center;
@@ -543,7 +575,7 @@
 
         .contact-method p {
             font-size: clamp(0.9rem, 2vw, 1rem);
-            color: var(--silver-400);
+            color: var(--platinum-400);
         }
 
         /* Footer - Enhanced */
@@ -562,19 +594,19 @@
         }
 
         .footer-link {
-            color: var(--silver-400);
+            color: var(--platinum-400);
             text-decoration: none;
             transition: all 0.3s ease;
             font-size: clamp(1.2rem, 3vw, 1.5rem);
             padding: var(--space-md);
             border-radius: var(--radius-full);
-            background: rgba(245, 158, 11, 0.1);
+            background: rgba(217, 119, 6, 0.1);
         }
 
         .footer-link:hover {
             color: var(--gold-400);
             transform: translateY(-3px);
-            box-shadow: var(--shadow-gold);
+            box-shadow: var(--shadow-executive-gold);
         }
 
         /* Enhanced Mobile Responsiveness */
@@ -710,12 +742,12 @@
         }
 
         .experience-card {
-            background: var(--glass-bg);
-            border: 2px solid var(--glass-border);
+            background: var(--glass-gold-bg);
+            border: 2px solid var(--glass-gold-border);
             border-radius: var(--radius-2xl);
             padding: var(--space-2xl);
-            backdrop-filter: var(--glass-blur);
-            box-shadow: var(--shadow-premium);
+            backdrop-filter: blur(16px);
+            box-shadow: var(--shadow-elite);
             transition: all 0.3s ease;
             position: relative;
             overflow: hidden;
@@ -728,13 +760,13 @@
             left: 0;
             right: 0;
             height: 4px;
-            background: var(--gradient-gold);
+            background: var(--gradient-executive-gold);
             border-radius: var(--radius-lg) var(--radius-lg) 0 0;
         }
 
         .experience-card:hover {
             transform: translateY(-8px);
-            box-shadow: var(--shadow-executive);
+            box-shadow: var(--shadow-luxury);
             border-color: var(--gold-400);
         }
 
@@ -756,7 +788,7 @@
         }
 
         .experience-badge {
-            background: var(--gradient-gold);
+            background: var(--gradient-executive-gold);
             color: var(--primary-950);
             padding: var(--space-sm) var(--space-md);
             border-radius: var(--radius-full);
@@ -780,7 +812,7 @@
 
         .experience-company {
             font-size: 1rem;
-            color: var(--silver-300);
+            color: var(--platinum-300);
             font-weight: 500;
             margin-bottom: var(--space-lg);
         }
@@ -790,7 +822,7 @@
         }
 
         .experience-description p {
-            color: var(--silver-400);
+            color: var(--platinum-400);
             line-height: 1.6;
             font-size: 0.95rem;
         }
@@ -812,7 +844,7 @@
         }
 
         .experience-achievements li {
-            color: var(--silver-400);
+            color: var(--platinum-400);
             font-size: 0.9rem;
             line-height: 1.5;
             margin-bottom: var(--space-sm);
@@ -1383,7 +1415,7 @@
     </footer>
 
     <!-- QR Code Library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode/1.5.3/qrcode.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
     
     <script>
         // Enhanced Mobile Menu Toggle
@@ -1442,88 +1474,153 @@
             }, 1000);
         });
 
-        // QR Code Generation with Enhanced Error Handling
-        document.addEventListener('DOMContentLoaded', function() {
-            const qrConfigs = [
-                {
-                    id: 'whatsapp-qr',
-                    url: 'https://wa.me/201005049176?text=Hello%20Raafat%2C%20I%20would%20like%20to%20discuss%20QHSE%20consulting%20services.',
-                    color: '#25D366'
-                },
-                {
-                    id: 'linkedin-qr',
-                    url: 'https://www.linkedin.com/in/raafat-atta-120a2899/',
-                    color: '#0077B5'
-                },
-                {
-                    id: 'email-qr',
-                    url: 'mailto:raafat.atta@gmail.com?subject=QHSE%20Consulting%20Inquiry&body=Hello%20Raafat%2C%0A%0AI%20am%20interested%20in%20discussing%20your%20QHSE%20consulting%20services.',
-                    color: '#EA4335'
-                },
-                {
-                    id: 'facebook-qr',
-                    url: 'https://www.facebook.com/raafat.atta.professional',
-                    color: '#1877F2'
-                }
-            ];
+        // QR Code Generation Function with Enhanced Error Handling
+        function generateQRCode(elementId, url, color) {
+            const element = document.getElementById(elementId);
+            if (!element) {
+                console.error('Element not found:', elementId);
+                return;
+            }
 
-            // Generate QR codes with enhanced styling
-            qrConfigs.forEach(config => {
-                const element = document.getElementById(config.id);
-                if (element) {
-                    try {
-                        QRCode.toCanvas(element, config.url, {
-                            width: 150,
-                            height: 150,
-                            margin: 2,
-                            color: {
-                                dark: config.color,
-                                light: '#FFFFFF'
-                            },
-                            errorCorrectionLevel: 'M',
-                            type: 'image/png',
-                            quality: 0.92,
-                            rendererOpts: {
-                                quality: 0.92
-                            }
-                        }, function(error) {
-                            if (error) {
-                                console.error('QR Code generation failed for', config.id, error);
-                                // Fallback display
-                                element.innerHTML = `
-                                    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; color: #666;">
-                                        <i class="fas fa-qrcode" style="font-size: 2rem; margin-bottom: 8px;"></i>
-                                        <span style="font-size: 0.8rem;">QR Code</span>
-                                    </div>
-                                `;
-                            }
+            // Show loading state
+            element.innerHTML = `
+                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; color: var(--gold-400);">
+                    <i class="fas fa-spinner fa-spin" style="font-size: 2rem; margin-bottom: 8px;"></i>
+                    <span style="font-size: 0.8rem;">Generating QR...</span>
+                </div>
+            `;
+
+            // Check if QRCode library is available
+            if (typeof QRCode === 'undefined') {
+                console.error('QRCode library not loaded');
+                showQRFallback(element, url, color);
+                return;
+            }
+
+            try {
+                // Clear the element and create a canvas
+                element.innerHTML = '';
+                const canvas = document.createElement('canvas');
+                
+                QRCode.toCanvas(canvas, url, {
+                    width: 150,
+                    height: 150,
+                    margin: 2,
+                    color: {
+                        dark: color,
+                        light: '#FFFFFF'
+                    },
+                    errorCorrectionLevel: 'M'
+                }, function(error) {
+                    if (error) {
+                        console.error('QR Code generation failed for', elementId, error);
+                        showQRFallback(element, url, color);
+                    } else {
+                        // Successfully generated QR code
+                        element.appendChild(canvas);
+                        canvas.style.borderRadius = '8px';
+                        canvas.style.cursor = 'pointer';
+                        canvas.style.transition = 'transform 0.3s ease';
+                        
+                        // Add click functionality
+                        canvas.addEventListener('click', () => {
+                            window.open(url, '_blank');
                         });
-                    } catch (error) {
-                        console.error('QR Code library error for', config.id, error);
-                        element.innerHTML = `
-                            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; color: #666;">
-                                <i class="fas fa-qrcode" style="font-size: 2rem; margin-bottom: 8px;"></i>
-                                <span style="font-size: 0.8rem;">QR Code</span>
-                            </div>
-                        `;
+                        
+                        // Add hover effect
+                        canvas.addEventListener('mouseenter', () => {
+                            canvas.style.transform = 'scale(1.05)';
+                        });
+                        
+                        canvas.addEventListener('mouseleave', () => {
+                            canvas.style.transform = 'scale(1)';
+                        });
                     }
+                });
+            } catch (error) {
+                console.error('QR Code library error for', elementId, error);
+                showQRFallback(element, url, color);
+            }
+        }
+
+        // Fallback function for QR codes
+        function showQRFallback(element, url, color) {
+            element.innerHTML = `
+                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; color: ${color}; cursor: pointer; transition: all 0.3s ease;" onclick="window.open('${url}', '_blank')" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                    <i class="fas fa-qrcode" style="font-size: 3rem; margin-bottom: 12px;"></i>
+                    <span style="font-size: 0.9rem; text-align: center; font-weight: 600;">Click to Connect</span>
+                    <span style="font-size: 0.7rem; text-align: center; opacity: 0.8; margin-top: 4px;">QR Code Available</span>
+                </div>
+            `;
+        }
+
+        // QR Code configuration
+        const qrConfigs = [
+            {
+                id: 'whatsapp-qr',
+                url: 'https://wa.me/201005049176?text=Hello%20Raafat%2C%20I%20would%20like%20to%20discuss%20QHSE%20consulting%20services.',
+                color: '#25D366'
+            },
+            {
+                id: 'linkedin-qr',
+                url: 'https://www.linkedin.com/in/raafat-atta-120a2899/',
+                color: '#0077B5'
+            },
+            {
+                id: 'email-qr',
+                url: 'mailto:raafat.atta@gmail.com?subject=QHSE%20Consulting%20Inquiry&body=Hello%20Raafat%2C%0A%0AI%20am%20interested%20in%20discussing%20your%20QHSE%20consulting%20services.',
+                color: '#EA4335'
+            },
+            {
+                id: 'facebook-qr',
+                url: 'https://www.facebook.com/raafat.atta.professional',
+                color: '#1877F2'
+            }
+        ];
+
+        // Initialize QR codes when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Wait for QR library to load
+            let attempts = 0;
+            const maxAttempts = 10;
+            
+            function initializeQRCodes() {
+                attempts++;
+                
+                if (typeof QRCode !== 'undefined' || attempts >= maxAttempts) {
+                    // Generate QR codes
+                    qrConfigs.forEach(config => {
+                        setTimeout(() => {
+                            generateQRCode(config.id, config.url, config.color);
+                        }, 100 * qrConfigs.indexOf(config)); // Stagger generation
+                    });
+                } else {
+                    // Wait a bit more for library to load
+                    setTimeout(initializeQRCodes, 200);
                 }
-            });
+            }
+            
+            // Start initialization
+            setTimeout(initializeQRCodes, 500);
         });
 
         // Enhanced QR Card Hover Effects
-        document.querySelectorAll('.qr-card').forEach(card => {
-            card.addEventListener('mouseenter', () => {
-                card.style.transform = 'translateY(-8px)';
-                card.style.boxShadow = 'var(--shadow-executive)';
-                card.style.borderColor = 'var(--gold-400)';
-            });
-            
-            card.addEventListener('mouseleave', () => {
-                card.style.transform = 'translateY(0)';
-                card.style.boxShadow = 'var(--shadow-premium)';
-                card.style.borderColor = 'var(--glass-border)';
-            });
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(() => {
+                document.querySelectorAll('.qr-card').forEach(card => {
+                    card.addEventListener('mouseenter', () => {
+                        card.style.transform = 'translateY(-8px)';
+                        card.style.boxShadow = 'var(--shadow-executive)';
+                        card.style.borderColor = 'var(--gold-400)';
+                    });
+                    
+                    card.addEventListener('mouseleave', () => {
+                        card.style.transform = 'translateY(0)';
+                        card.style.boxShadow = 'var(--shadow-premium)';
+                        card.style.borderColor = 'var(--glass-border)';
+                    });
+                });
+            }, 1000);
         });
 
         // Enhanced Smooth Scrolling with Offset
